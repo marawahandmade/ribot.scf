@@ -1,0 +1,77 @@
+/* frontend/src/modules/Public/Product/detail.css */
+
+.detail-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi 2 kolom: Gambar & Info */
+  gap: 40px;
+}
+
+.detail-image-wrapper {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.detail-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  color: #e63946; /* Warna merah untuk harga */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detail-desc {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-cart {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+  .detail-container {
+    grid-template-columns: 1fr; /* Tumpuk jadi 1 kolom */
+  }
+}
