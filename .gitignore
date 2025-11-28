@@ -1,2 +1,3 @@
-mrw-backend/.env
+backend/.gitignore
 frontend/.gitignore
+backend/.env
